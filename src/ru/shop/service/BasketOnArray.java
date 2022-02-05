@@ -20,7 +20,6 @@ public class BasketOnArray implements Basket {
 
         products[basketIndex++] = p;
         regenArrayIndex++;
-
     }
 
     public Product[] getProducts() {

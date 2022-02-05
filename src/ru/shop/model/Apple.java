@@ -1,9 +1,18 @@
 package ru.shop.model;
 
-public class Apple implements Fruit {
+import java.util.Random;
+
+public class Apple extends Fruit {
+
+    public Apple(String name){
+       super(name);
+    }
 
 
-    private String kg;
+    public Apple(){
+
+    }
+
 
     @Override
     public void eat() {
@@ -16,9 +25,8 @@ public class Apple implements Fruit {
     }
 
     @Override
-    public String toString() {
-        return "Apple{" +
-                "kg='" + kg + '\'' +
-                '}';
+    public int hashCode() {
+        Random r = new Random();
+        return r.nextInt();
     }
 }

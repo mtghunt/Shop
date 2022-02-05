@@ -11,6 +11,13 @@ public class ShopRunApp {
 
     public static void main(String[] args) {
 
+        Apple a1 = new Apple();
+
+        Apple a2 = new Apple();
+
+
+
+
         ShopService s = new ShopService();
 
         Basket myBasket = new BasketOnSet();
@@ -36,4 +43,5 @@ public class ShopRunApp {
         }
         return new KIvi();
     }
+
 }
